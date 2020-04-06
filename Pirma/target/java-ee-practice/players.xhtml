@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head/>
+<h:body>
+    <h2>Customer #{customerAutos.customer.fullname} autos:</h2>
+    <ol>
+        <ui:repeat value="#{customerAutos.customer.rented}" var="auto">
+            <li>#{auto.auto.model}, #{auto.auto.price}/day, rent Day: #{auto.date}</li>
+        </ui:repeat>
+    </ol>
+
+    <h2>Past rents:</h2>
+    <ol>
+        <ui:repeat value="#{customerAutos.past()}" var="auto">
+            <li>#{auto.auto.model}, #{auto.auto.price}/day, rent Day: #{auto.date}</li>
+        </ui:repeat>
+    </ol>
+
+    <h2>Planned future rents:</h2>
+    <ol>
+        <ui:repeat value="#{customerAutos.future()}" var="auto">
+            <li>#{auto.auto.model}, #{auto.auto.price}/day, rent Day: #{auto.date}</li>
+        </ui:repeat>
+    </ol>
+
+    <h2>Planned rents today:</h2>
+    <ol>
+        <ui:repeat value="#{customerAutos.today()}" var="auto">
+            <li>#{auto.auto.model}, #{auto.auto.price}/day, rent Day: #{auto.date}</li>
+        </ui:repeat>
+    </ol>
+
+    <h2>Rent A Car:</h2>
+    <h:form>
+        <h:inputText a:placeholder="id" value="#{customerAutos.id}" required="true" />
+        <h2>Rent Day</h2>
+        <h:inputText a:placeholder="year" value="#{customerAutos.year}" required="true" />
+        <h:inputText a:placeholder="month" value="#{customerAutos.month}" required="true" />
+        <h:inputText a:placeholder="day" value="#{customerAutos.day}" required="true" />
+        <h:commandButton value="Rent A Car" action="#{customerAutos.AddAuto}" >
+            <f:param name="customerId" value="#{customerAutos.customer.id}" />
+        </h:commandButton>
+    </h:form>
+    <h:link outcome="index" value="Back to home page"/>
+</h:body>
+</html>

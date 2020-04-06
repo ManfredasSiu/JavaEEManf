@@ -1,0 +1,10 @@
+<datasources>
+    <datasource jndi-name="NuomaDS" pool-name="NuomaDS">
+        <driver>h2</driver>
+        <connection-url>jdbc:h2:~/h2database/Nuoma;AUTO_SERVER=TRUE</connection-url>
+        <security>
+            <user-name>sa</user-name>
+            <password>sa</password>
+        </security>
+    </datasource>
+</datasources>

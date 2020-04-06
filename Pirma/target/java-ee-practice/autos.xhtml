@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head/>
+<h:body>
+    <h2>Renters of #{autoRenters.auto.id}, #{autoRenters.auto.model}:</h2>
+    <ol>
+        <ui:repeat value="#{autoRenters.auto.renter}" var="customer">
+            <li>#{customer.customer.fullname}, #{customer.date}</li>
+        </ui:repeat>
+    </ol>
+    <h:link outcome="index" value="Back to home page"/>
+</h:body>
+</html>

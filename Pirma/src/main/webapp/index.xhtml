@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<h:head/>
+<h:body>
+    <h2>Hello World!</h2>
+    <h2>Customers:</h2>
+    <ol>
+        <ui:repeat value="#{customers.allCustomers}" var="customer">
+            <li><h:link value="#{customer.fullname}" outcome="players?customerId=#{customer.id}" /></li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <h:inputText value="#{customers.customerToCreate.fullname}" required="true" />
+        <h:commandButton value="Add new customer" action="#{customers.createCustomer}" />
+    </h:form>
+
+    <h2>Autos:</h2>
+    <ol>
+        <ui:repeat value="#{autos.allAutos}" var="auto">
+            <li><h:link value="#{auto.model}" outcome="autos?autoId=#{auto.id}" /></li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <h:inputText value="#{autos.autoToCreate.model}" required="true" />
+        <h:inputText value="#{autos.autoToCreate.price}" required="true" />
+        <h:commandButton value="Add new auto" action="#{autos.createAuto}" />
+    </h:form>
+
+    <h:link outcome="myBatis/teams" value="MyBatis implementation"/>
+</h:body>
+</html>
