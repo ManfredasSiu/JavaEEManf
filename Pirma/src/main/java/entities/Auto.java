@@ -11,7 +11,7 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "Auto.findAll", query = "select a from Auto as a")
 })
-@Table(name = "Auto")
+@Table(name = "Auto")//test
 @Getter
 @Setter
 public class Auto implements Serializable {

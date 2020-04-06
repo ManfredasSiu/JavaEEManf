@@ -7,13 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc2664a5-fa37-4764-a3bc-20a914fe2b4c" name="Default Changelist" comment="Testing">
-      <change afterPath="$PROJECT_DIR$/.idea/Pirma.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/abd6cbff-10c7-44a8-b7a1-96d806ed72a0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6cbff-10c7-44a8-b7a1-96d806ed72a0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/usecases/CustomerAutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usecases/CustomerAutos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Auto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +93,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1ZD7XBK9xRURtZs3wLiqzGrzC6G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -333,7 +329,16 @@
       <workItem from="1585584746990" duration="5992000" />
       <workItem from="1585597341110" duration="2659000" />
       <workItem from="1586171928710" duration="312000" />
+      <workItem from="1586172256730" duration="122000" />
     </task>
+    <task id="LOCAL-00001" summary="Testing">
+      <created>1586172308298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586172308298</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,10 +385,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584366035992" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1586172287938">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1586172373079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586172287938" />
+    <state x="585" y="114" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586172373079" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1585585214085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -453,10 +458,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="165" key="com.intellij.javaee.view.ServerArtifactsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584364219445" />
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586171968270">
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586172353509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586171968270" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586172353509" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1584374227761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
