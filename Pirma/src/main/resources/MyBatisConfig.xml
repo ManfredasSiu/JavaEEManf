@@ -11,12 +11,12 @@
         <environment id="development">
             <transactionManager type="MANAGED"/>
             <dataSource type="JNDI">
-                <property name="data_source" value="openejb:Resource/NuomaDS"/>
+                <property name="data_source" value="NuomaDS"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mybatis.xml/TeamMapper.xml"/>
-        <mapper resource="mybatis.xml/PlayerMapper.xml"/>
+        <mapper resource="mybatis/xml/TeamMapper.xml"/>
+        <mapper resource="mybatis/xml/PlayerMapper.xml"/>
     </mappers>
 </configuration>
