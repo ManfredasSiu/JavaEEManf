@@ -6,9 +6,42 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc2664a5-fa37-4764-a3bc-20a914fe2b4c" name="Default Changelist" comment="Fixing MyBatisConfig.xml">
+    <list default="true" id="bc2664a5-fa37-4764-a3bc-20a914fe2b4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/BussinesGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interceptors/LoggedInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interceptors/MethodLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/GroupDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/PriceCalc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/usecases/CustomerGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/usecases/Groups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/groups.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/abd6cbff-10c7-44a8-b7a1-96d806ed72a0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6cbff-10c7-44a8-b7a1-96d806ed72a0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/abd6cbff-10c7-44a8-b7a1-96d806ed72a0/storage_v2/_src_/database/NUOMA._P5yBA/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6cbff-10c7-44a8-b7a1-96d806ed72a0/storage_v2/_src_/database/NUOMA._P5yBA/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/MyBatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/MyBatisConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/CustomersDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/CustomersDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/usecases/Autos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usecases/Autos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/usecases/CustomerAutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usecases/CustomerAutos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/usecases/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usecases/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/usecases/PlayersForTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/usecases/PlayersForTeam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/players.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/players.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/persistence/CustomersDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/persistence/CustomersDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usecases/Autos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usecases/Autos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usecases/CustomerAutos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usecases/CustomerAutos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usecases/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usecases/Customers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usecases/PlayersForTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usecases/PlayersForTeam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/entities/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/entities/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/persistence/CustomersDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/persistence/CustomersDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/usecases/Autos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/usecases/Autos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/usecases/CustomerAutos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/usecases/CustomerAutos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/usecases/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/usecases/Customers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/usecases/PlayersForTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/usecases/PlayersForTeam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/players.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/players.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,16 +97,7 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="CUSTOMER_AUTO: table" type="818c1b4a:H2ImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jdbc:h2:~/h2database/Nuoma;AUTO_SERVER=TRUE;" type="feb32156:DbDataSourceImpl" />
-        <item name="NUOMA: database" type="2aa06773:H2ImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="CUSTOMERAUTO: table" type="818c1b4a:H2ImplModel$Table" />
+        <item name="BUSSINESGROUP: table" type="818c1b4a:H2ImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -86,6 +110,7 @@
       <list>
         <option value="HTML File" />
         <option value="XHTML File" />
+        <option value="cdi.beans_1_1" />
         <option value="Class" />
       </list>
     </option>
@@ -109,7 +134,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -117,25 +142,27 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/webapp/players.xhtml" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="mybatis.dao" />
-      <recent name="mybatis" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\webapp" />
-      <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\java\persistence" />
-      <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="usecases" />
-      <recent name="entities" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\resources\mybatis\xml" />
       <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\resources" />
       <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\resources\META-INF" />
       <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\webapp" />
       <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="mybatis.dao" />
+      <recent name="mybatis" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="usecases" />
+      <recent name="persistence" />
+      <recent name="entities" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\manfr\IdeaProjects\JavaEEManf\Pirma\src\main\webapp" />
+      <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\webapp" />
+      <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\java\persistence" />
+      <recent name="C:\Users\manfr\IdeaProjects\Pirma\Pirma\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -332,7 +359,9 @@
       <workItem from="1586172256730" duration="198000" />
       <workItem from="1586675363045" duration="1221000" />
       <workItem from="1586764233825" duration="838000" />
-      <workItem from="1586767789858" duration="849000" />
+      <workItem from="1586767789858" duration="6116000" />
+      <workItem from="1586808944432" duration="7984000" />
+      <workItem from="1586846619045" duration="13540000" />
     </task>
     <task id="LOCAL-00001" summary="Testing">
       <created>1586172308298</created>
@@ -355,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586767956894</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixing MyBatisConfig.xml">
+      <created>1586768665057</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586768665057</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,6 +479,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Assign_Data_Sources/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584366120002" />
+    <state x="552" y="178" key="#Deployment" timestamp="1586768656047">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586768656047" />
     <state x="690" y="118" key="#JBoss_18.0.1.Final" timestamp="1584363019045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -463,10 +503,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="184" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584362970615" />
-    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585074592982">
+    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586816660111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585074592982" />
+    <state x="756" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586816660111" />
     <state x="756" y="426" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585074586004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -475,10 +515,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584366035992" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1586768381883">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1586863433857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586768381883" />
+    <state x="585" y="114" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586863433857" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1586768080839">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -487,26 +527,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585585159021" />
-    <state width="1877" height="297" key="GridCell.Tab.0.bottom" timestamp="1586767962662">
+    <state width="1877" height="297" key="GridCell.Tab.0.bottom" timestamp="1586863433879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584988827023" />
-    <state width="1877" height="297" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586767962662" />
-    <state width="1877" height="297" key="GridCell.Tab.0.center" timestamp="1586767962662">
+    <state width="1877" height="297" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586863433879" />
+    <state width="1877" height="297" key="GridCell.Tab.0.center" timestamp="1586863433879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="297" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584988827023" />
-    <state width="1877" height="297" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586767962662" />
-    <state width="1877" height="297" key="GridCell.Tab.0.left" timestamp="1586767962662">
+    <state width="1877" height="297" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586863433879" />
+    <state width="1877" height="297" key="GridCell.Tab.0.left" timestamp="1586863433878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="297" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584988827023" />
-    <state width="1877" height="297" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586767962662" />
-    <state width="1877" height="297" key="GridCell.Tab.0.right" timestamp="1586767962662">
+    <state width="1877" height="297" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586863433878" />
+    <state width="1877" height="297" key="GridCell.Tab.0.right" timestamp="1586863433879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="297" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584988827023" />
-    <state width="1877" height="297" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586767962662" />
+    <state width="1877" height="297" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586863433879" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1585078641256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -535,11 +575,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586172216318" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586764246786">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586768672783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586768672783" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586846897841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584987674080" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586764246786" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586846897841" />
     <state x="529" y="212" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1585064345047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

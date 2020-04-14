@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<h:head/>
+<h:body>
+    <h2>Hello World!</h2>
+    <h2>Customers of #{customerGroups.bussinesGroup.name}:</h2>
+    <ol>
+        <ui:repeat value="#{customerGroups.bussinesGroup.customers}" var="customer">
+            <li><h:link value="#{customer.fullname}" outcome="players?customerId=#{customer.id}" /></li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <h:inputText value="#{customerGroups.cusId}" required="true"></h:inputText>
+        <h:commandButton value="Add customer" action="#{customerGroups.AddCustomer}" />
+        <h:outputText value="Value was already modified by other user. If you want to override it - try again" rendered="#{param['error'] == 'optimistic-lock-exception'}" />
+    </h:form>
+</h:body>
+</html>

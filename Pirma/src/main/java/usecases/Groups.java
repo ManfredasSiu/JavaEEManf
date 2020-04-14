@@ -1,12 +1,12 @@
 package usecases;
 
-import entities.Auto;
-import entities.Customer;
+import entities.BussinesGroup;
+import entities.Team;
 import interceptors.LoggedInvocation;
 import lombok.Getter;
 import lombok.Setter;
-import persistence.AutoDAO;
-import persistence.CustomersDAO;
+import persistence.GroupDAO;
+import persistence.TeamsDAO;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
@@ -15,30 +15,31 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Model
-public class Autos {
+public class Groups {
+
     @Inject
-    private AutoDAO autoDAO;
+    private GroupDAO groupDAO;
 
     @Getter
     @Setter
-    private Auto autoToCreate = new Auto();
+    private BussinesGroup bussinesGroupToCreate = new BussinesGroup();
 
     @Getter
-    private List<Auto> allAutos;
+    private List<BussinesGroup> allGroups;
 
     @PostConstruct
     public void init(){
-        loadAllAutos();
+        loadAllGroups();
     }
 
     @Transactional
     @LoggedInvocation
-    public String createAuto(){
-        this.autoDAO.persist(autoToCreate);
+    public String createGroup(){
+        this.groupDAO.persist(bussinesGroupToCreate);
         return "index?faces-redirect=true";
     }
 
-    private void loadAllAutos(){
-        this.allAutos = autoDAO.loadAll();
+    private void loadAllGroups(){
+        this.allGroups = groupDAO.loadAll();
     }
 }

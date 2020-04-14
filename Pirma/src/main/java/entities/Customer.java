@@ -27,6 +27,7 @@ public class Customer implements Serializable {
 
     private String fullname;
 
+    //pavizdys
     @ManyToMany
     @JoinTable(
             name = "customer_auto",
@@ -37,4 +38,12 @@ public class Customer implements Serializable {
 
     @OneToMany(mappedBy = "customer")
     private List<CustomerAuto> rented;
+
+    @ManyToOne
+    @JoinColumn(name="Group_ID")
+    private BussinesGroup group;
+
+    @Version
+    @Column(name = "OPT_LOCK_VERSION")
+    private Integer version;
 }

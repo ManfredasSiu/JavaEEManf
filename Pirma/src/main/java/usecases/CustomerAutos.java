@@ -4,9 +4,11 @@ import entities.Auto;
 import entities.Customer;
 import entities.CustomerAuto;
 import entities.Team;
+import interceptors.LoggedInvocation;
 import lombok.Getter;
 import lombok.Setter;
 import persistence.*;
+import services.PriceCalc;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.Init;
@@ -50,6 +52,7 @@ public class CustomerAutos {
     LocalDate LD;
 
     @Transactional
+    @LoggedInvocation
     public String AddAuto(){
 
         /*List<Auto> autos = customer.getAutos();
@@ -57,17 +60,15 @@ public class CustomerAutos {
         customer.setAutos(autos);
         customersDAO.update(customer);*/
         LD= LocalDate.of(year, month, day);
-        List<CustomerAuto> CA = customer.getRented();
         CustomerAuto newCA = new CustomerAuto();
         Auto addtionalAuto = autoDAO.findOne(id);
         for( CustomerAuto DateCheck : addtionalAuto.getRenter()){
             if(DateCheck.getDate().equals(LD))
             {
-
                 return "players?faces-redirect=true&customerId=" + this.customer.getId();
             }
         }
-        newCA.setAuto(autoDAO.findOne(id));
+        newCA.setAuto(addtionalAuto);
         newCA.setCustomer(customer);
 
         newCA.setDate(LD);
@@ -87,8 +88,11 @@ public class CustomerAutos {
     {
         List<CustomerAuto> pastAutos = new ArrayList<CustomerAuto>();
         for (CustomerAuto CA : customer.getRented()) {
-            if(CA.getDate().isBefore(LocalDate.now()))
+            if(CA.getDate().isBefore(LocalDate.now())) {
+                if(this.customer.getGroup() != null)
+                    CA.getAuto().setPrice(CA.getAuto().getPrice() - CA.getAuto().getPrice() * (this.customer.getGroup().getDiscount() / 100));
                 pastAutos.add(CA);
+            }
         }
         return pastAutos;
     }
@@ -97,8 +101,11 @@ public class CustomerAutos {
     {
         List<CustomerAuto> futureAutos = new ArrayList<CustomerAuto>();
         for (CustomerAuto CA : customer.getRented()) {
-            if(CA.getDate().isAfter(LocalDate.now()))
+            if(CA.getDate().isAfter(LocalDate.now())) {
+                if(this.customer.getGroup() != null)
+                    CA.getAuto().setPrice(CA.getAuto().getPrice() - CA.getAuto().getPrice() * (this.customer.getGroup().getDiscount() / 100));
                 futureAutos.add(CA);
+            }
         }
         return futureAutos;
     }
@@ -107,8 +114,11 @@ public class CustomerAutos {
     {
         List<CustomerAuto> currentAutos = new ArrayList<CustomerAuto>();
         for (CustomerAuto CA : customer.getRented()) {
-            if(CA.getDate().equals(LocalDate.now()))
+            if(CA.getDate().equals(LocalDate.now())) {
+                if(this.customer.getGroup() != null)
+                    CA.getAuto().setPrice(CA.getAuto().getPrice() - CA.getAuto().getPrice() * (this.customer.getGroup().getDiscount()/100));
                 currentAutos.add(CA);
+            }
         }
         return currentAutos;
     }

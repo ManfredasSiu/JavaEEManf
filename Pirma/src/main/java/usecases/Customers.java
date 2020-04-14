@@ -2,6 +2,7 @@ package usecases;
 
 import entities.Customer;
 import entities.Team;
+import interceptors.LoggedInvocation;
 import lombok.Getter;
 import lombok.Setter;
 import persistence.CustomersDAO;
@@ -31,10 +32,12 @@ public class Customers {
     }
 
     @Transactional
+    @LoggedInvocation
     public String createCustomer(){
         this.customersDAO.persist(customerToCreate);
         return "index?faces-redirect=true";
     }
+
 
     private void loadAllTeams(){
         this.allCustomers = customersDAO.loadAll();

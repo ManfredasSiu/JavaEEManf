@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.util.Map;
 
 import entities.Player;
+import interceptors.LoggedInvocation;
 import lombok.Getter;
 import lombok.Setter;
 import entities.Team;
@@ -31,6 +32,7 @@ public class PlayersForTeam implements Serializable {
     private Team team;
 
     @Transactional
+    @LoggedInvocation
     public String createPlayer() {
         playerToCreate.setTeam(this.team);
         playersDAO.persist(playerToCreate);

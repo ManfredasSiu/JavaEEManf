@@ -10,28 +10,28 @@
     <h2>Customer #{customerAutos.customer.fullname} autos:</h2>
     <ol>
         <ui:repeat value="#{customerAutos.customer.rented}" var="auto">
-            <li>#{auto.auto.model}, #{auto.auto.price}/day, rent Day: #{auto.date}</li>
+            <li>Model: #{auto.auto.model}, Price: #{auto.auto.price}, Day: #{auto.date}</li>
         </ui:repeat>
     </ol>
 
     <h2>Past rents:</h2>
     <ol>
         <ui:repeat value="#{customerAutos.past()}" var="auto">
-            <li>#{auto.auto.model}, #{auto.auto.price}/day, rent Day: #{auto.date}</li>
+            <li>Model: #{auto.auto.model}, Price: #{auto.auto.price}, Day: #{auto.date}</li>
         </ui:repeat>
     </ol>
 
     <h2>Planned future rents:</h2>
     <ol>
         <ui:repeat value="#{customerAutos.future()}" var="auto">
-            <li>#{auto.auto.model}, #{auto.auto.price}/day, rent Day: #{auto.date}</li>
+            <li>Model: #{auto.auto.model}, Price: #{auto.auto.price}, Day: #{auto.date}</li>
         </ui:repeat>
     </ol>
 
     <h2>Planned rents today:</h2>
     <ol>
         <ui:repeat value="#{customerAutos.today()}" var="auto">
-            <li>#{auto.auto.model}, #{auto.auto.price}/day, rent Day: #{auto.date}</li>
+            <li>Model: #{auto.auto.model}, Price: #{auto.auto.price}, Day: #{auto.date}</li>
         </ui:repeat>
     </ol>
 
@@ -44,6 +44,16 @@
         <h:inputText a:placeholder="day" value="#{customerAutos.day}" required="true" />
         <h:commandButton value="Rent A Car" action="#{customerAutos.AddAuto}" >
             <f:param name="customerId" value="#{customerAutos.customer.id}" />
+        </h:commandButton>
+    </h:form>
+
+    <h2>Check price with discount:</h2>
+    <h:form>
+        <h:outputText value="#{priceCalc.calculated}" />
+        <h:inputText a:placeholder="price" value="#{priceCalc.price}" required="true" />
+        <h:commandButton value="Check"  action="#{priceCalc.calculate}">
+            <f:param name="customerId" value="#{customerAutos.customer.id}" />
+            <f:param name="discount" value="#{customerAutos.customer.group.discount}" />
         </h:commandButton>
     </h:form>
     <h:link outcome="index" value="Back to home page"/>

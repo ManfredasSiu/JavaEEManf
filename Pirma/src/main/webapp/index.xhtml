@@ -28,6 +28,21 @@
         <h:commandButton value="Add new auto" action="#{autos.createAuto}" />
     </h:form>
 
+    <h2>Groups:</h2>
+    <ol>
+        <ui:repeat value="#{groups.allGroups}" var="group">
+            <li><h:link value="#{group.name}" outcome="groups?groupId=#{group.id}" /></li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <h:inputText value="#{groups.bussinesGroupToCreate.name}" required="true" />
+        <h:inputText value="#{groups.bussinesGroupToCreate.discount}" required="true" />
+        <h:commandButton value="Add new group" action="#{groups.createGroup}" />
+    </h:form>
+
+    <h:form>
+        <h:commandButton value="Add customer" action="#{customers.addCustomer}" />
+    </h:form>
     <h:link outcome="myBatis/teams" value="MyBatis implementation"/>
 </h:body>
 </html>
